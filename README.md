@@ -35,8 +35,9 @@ O projeto foi construído como portfólio prático de cibersegurança, com foco 
 - Gerar relatórios de pentest no formato utilizado em contexto profissional
 
 ---
-
 ## 🏗️ Arquitetura
+
+```
 REDFORGE/
 ├── attacks/              # Scripts de ataque por técnica MITRE ATT&CK
 │   ├── recon/            #   T1046 — Network Service Scanning
@@ -46,15 +47,17 @@ REDFORGE/
 ├── reports/              # Relatórios gerados automaticamente (PDF/Markdown)
 ├── docs/                 # Documentação técnica e mapeamento MITRE
 └── requirements.txt
---- #
+```
 
 ## 🔁 Fluxo de Execução
-[ Recon ]──▶[ Vuln Analysis ]──▶[ Exploitation ]──▶[ Post-Exploitation ]──▶[ Report ]
-│               │                   │                    │                   │
-Scanner        CVE Lookup         vsftpd, Samba,       Privesc,            PDF/MD
-de portas      via NVD API        Brute Force          Exfiltração         automático
-(sockets)      + CVSS score       (Paramiko)           simulada
---- #
+
+| Passo | Módulo | Descrição |
+|-------|--------|-----------|
+| 1 | Recon | Scanner de portas e banner grabbing (sockets) |
+| 2 | Vuln Analysis | CVE lookup via NVD API + score CVSS |
+| 3 | Exploitation | vsftpd, Samba, distcc, brute force (Paramiko) |
+| 4 | Post-Exploitation | Enumeração pós-acesso, exfiltração simulada |
+| 5 | Report | Geração automática de relatório PDF/Markdown |
 
 ## 🧪 Ambiente de Laboratório
 
