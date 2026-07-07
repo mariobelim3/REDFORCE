@@ -68,7 +68,7 @@ REDFORGE/
 | Wazuh           | Monitorização e deteção (SIEM) |
 | VirtualBox      | Hypervisor (rede interna NAT)  |
 
-> Infraestrutura documentada no repositório [home-lab](https://github.com/mariobelim3/homelab-cybersecurity)
+> Infraestrutura documentada no repositório [home-lab] (https://github.com/mariobelim3/homelab-cybersecurity)
 
 ---
 
