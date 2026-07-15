@@ -106,6 +106,10 @@ REDFORGE/
 
 ![samba usermap](docs/screenshots/phase3_samba_usermap.png)
 
+**SSH Brute Force (T1110.001) — 4 credenciais encontradas**
+
+![ssh bruteforce](docs/screenshots/phase3_ssh_bruteforce.png)
+
 ## 🛠️ Stack Técnico
 
 - **Python 3.10+** — linguagem principal
