@@ -104,7 +104,7 @@ REDFORGE/
 
 **Samba usermap_script RCE (CVE-2007-2447 | CVSS 9.3 CRITICAL)**
 
-![samba exploit](docs/screenshots/phase3_samba_usermap.png)
+![samba usermap](docs/screenshots/phase3_samba_usermap.png)
 
 ## 🛠️ Stack Técnico
 
