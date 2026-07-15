@@ -1,0 +1,244 @@
+{
+    "target": "10.0.2.5",
+    "timestamp": "2026-07-15T17:39:18.914645",
+    "phases": {
+        "recon": {
+            "mitre_technique": "T1046",
+            "target": "10.0.2.5",
+            "timestamp": "2026-07-15T17:39:19.951552",
+            "ports_scanned": 22,
+            "open_ports": [
+                {
+                    "port": 21,
+                    "state": "open",
+                    "banner": "220 (vsFTPd 2.3.4)"
+                },
+                {
+                    "port": 22,
+                    "state": "open",
+                    "banner": "SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"
+                },
+                {
+                    "port": 23,
+                    "state": "open",
+                    "banner": "\u0018 #'"
+                },
+                {
+                    "port": 25,
+                    "state": "open",
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)"
+                },
+                {
+                    "port": 53,
+                    "state": "open",
+                    "banner": ""
+                },
+                {
+                    "port": 80,
+                    "state": "open",
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered-By: PHP/5.2.4-2ubuntu5.10\r\nConnection: close\r\nContent-Type: text/html"
+                },
+                {
+                    "port": 111,
+                    "state": "open",
+                    "banner": ""
+                },
+                {
+                    "port": 139,
+                    "state": "open",
+                    "banner": ""
+                },
+                {
+                    "port": 445,
+                    "state": "open",
+                    "banner": ""
+                },
+                {
+                    "port": 3306,
+                    "state": "open",
+                    "banner": ">\u0000\u0000\u0000\n5.0.51a-3ubuntu5\u0000\b\u0000\u0000\u0000&Floh<2$\u0000,\b\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[!1pc}m*(*8z\u0000"
+                },
+                {
+                    "port": 5900,
+                    "state": "open",
+                    "banner": "RFB 003.003"
+                }
+            ],
+            "summary": {
+                "total_open": 11,
+                "ports": [
+                    21,
+                    22,
+                    23,
+                    25,
+                    53,
+                    80,
+                    111,
+                    139,
+                    445,
+                    3306,
+                    5900
+                ]
+            }
+        },
+        "vulns": {
+            "mitre_technique": "T1592",
+            "target": "10.0.2.5",
+            "timestamp": "2026-07-15T17:39:19.952978",
+            "vulnerabilities": [
+                {
+                    "port": 25,
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)",
+                    "keyword": "Postfix",
+                    "cve_id": "CVE-2004-1113",
+                    "cvss_score": 10.0,
+                    "cvss_severity": "HIGH",
+                    "description": "SQL injection vulnerability in SQLgrey Postfix greylisting service before 1.2.0 allows remote attackers to execute arbitrary SQL commands via the (1) sender or (2) recipient e-mail addresses."
+                },
+                {
+                    "port": 21,
+                    "banner": "220 (vsFTPd 2.3.4)",
+                    "keyword": "vsftpd 2.3.4",
+                    "cve_id": "CVE-2011-2523",
+                    "cvss_score": 9.8,
+                    "cvss_severity": "CRITICAL",
+                    "description": "vsftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp."
+                },
+                {
+                    "port": 25,
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)",
+                    "keyword": "Postfix",
+                    "cve_id": "CVE-2004-1088",
+                    "cvss_score": 7.5,
+                    "cvss_severity": "HIGH",
+                    "description": "Postfix server for Apple Mac OS X 10.3.6, when using CRAM-MD5, allows remote attackers to send mail without authentication by replaying authentication information."
+                },
+                {
+                    "port": 80,
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered",
+                    "keyword": "Apache HTTP Server",
+                    "cve_id": "CVE-2000-1168",
+                    "cvss_score": 7.5,
+                    "cvss_severity": "HIGH",
+                    "description": "IBM HTTP Server 1.3.6 (based on Apache) allows remote attackers to cause a denial of service and possibly execute arbitrary commands via a long GET request."
+                },
+                {
+                    "port": 25,
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)",
+                    "keyword": "Postfix",
+                    "cve_id": "CVE-2001-0894",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "Vulnerability in Postfix SMTP server before 20010228-pl07, when configured to email the postmaster when SMTP errors cause the session to terminate, allows remote attackers to cause a denial of service"
+                },
+                {
+                    "port": 25,
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)",
+                    "keyword": "Postfix",
+                    "cve_id": "CVE-2003-0468",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "Postfix 1.1.11 and earlier allows remote attackers to use Postfix to conduct \"bounce scans\" or DDos attacks of other hosts via an email address to the local host containing the target IP address and s"
+                },
+                {
+                    "port": 25,
+                    "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)",
+                    "keyword": "Postfix",
+                    "cve_id": "CVE-2003-0540",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "The address parser code in Postfix 1.1.12 and earlier allows remote attackers to cause a denial of service (lock) via (1) a malformed envelope address to a local host that would generate a bounce and "
+                },
+                {
+                    "port": 80,
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered",
+                    "keyword": "Apache HTTP Server",
+                    "cve_id": "CVE-1999-1412",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "A possible interaction between Apple MacOS X release 1.0 and Apache HTTP server allows remote attackers to cause a denial of service (crash) via a flood of HTTP GET requests to CGI programs, which gen"
+                },
+                {
+                    "port": 80,
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered",
+                    "keyword": "Apache HTTP Server",
+                    "cve_id": "CVE-2000-0505",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "The Apache 1.3.x HTTP server for Windows platforms allows remote attackers to list directory contents by requesting a URL containing a large number of / characters."
+                },
+                {
+                    "port": 80,
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered",
+                    "keyword": "Apache HTTP Server",
+                    "cve_id": "CVE-2001-1556",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "The log files in Apache web server contain information directly supplied by clients and does not filter or quote control characters, which could allow remote attackers to hide HTTP requests and spoof "
+                },
+                {
+                    "port": 80,
+                    "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered",
+                    "keyword": "Apache HTTP Server",
+                    "cve_id": "CVE-2002-0240",
+                    "cvss_score": 5.0,
+                    "cvss_severity": "MEDIUM",
+                    "description": "PHP, when installed with Apache and configured to search for index.php as a default web page, allows remote attackers to obtain the full pathname of the server via the HTTP OPTIONS method, which revea"
+                }
+            ]
+        },
+        "exploitation": [
+            {
+                "exploit": "vsftpd_234_backdoor",
+                "cve": "CVE-2011-2523",
+                "cvss": 9.8,
+                "target": "10.0.2.5",
+                "success": true,
+                "access_level": "root"
+            },
+            {
+                "exploit": "ssh_bruteforce",
+                "target": "10.0.2.5",
+                "success": true,
+                "credentials_found": [
+                    {
+                        "username": "msfadmin",
+                        "password": "msfadmin"
+                    },
+                    {
+                        "username": "user",
+                        "password": "user"
+                    },
+                    {
+                        "username": "postgres",
+                        "password": "postgres"
+                    },
+                    {
+                        "username": "service",
+                        "password": "service"
+                    }
+                ]
+            },
+            {
+                "exploit": "samba_usermap",
+                "cve": "CVE-2007-2447",
+                "target": "10.0.2.5",
+                "success": "manual",
+                "note": "Requer Metasploit \u2014 confirmado manualmente"
+            },
+            {
+                "exploit": "samba_usermap",
+                "cve": "CVE-2007-2447",
+                "target": "10.0.2.5",
+                "success": "manual",
+                "note": "Requer Metasploit \u2014 confirmado manualmente"
+            }
+        ]
+    },
+    "summary": {
+        "open_ports": 11,
+        "cves_found": 11,
+        "exploits_attempted": 4,
+        "exploits_successful": 2
+    }
+}

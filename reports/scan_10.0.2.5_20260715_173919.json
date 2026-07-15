@@ -1,0 +1,79 @@
+{
+    "mitre_technique": "T1046",
+    "target": "10.0.2.5",
+    "timestamp": "2026-07-15T17:39:19.951552",
+    "ports_scanned": 22,
+    "open_ports": [
+        {
+            "port": 21,
+            "state": "open",
+            "banner": "220 (vsFTPd 2.3.4)"
+        },
+        {
+            "port": 22,
+            "state": "open",
+            "banner": "SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"
+        },
+        {
+            "port": 23,
+            "state": "open",
+            "banner": "\u0018 #'"
+        },
+        {
+            "port": 25,
+            "state": "open",
+            "banner": "220 metasploitable.localdomain ESMTP Postfix (Ubuntu)"
+        },
+        {
+            "port": 53,
+            "state": "open",
+            "banner": ""
+        },
+        {
+            "port": 80,
+            "state": "open",
+            "banner": "HTTP/1.1 200 OK\r\nDate: Wed, 15 Jul 2026 21:39:19 GMT\r\nServer: Apache/2.2.8 (Ubuntu) DAV/2\r\nX-Powered-By: PHP/5.2.4-2ubuntu5.10\r\nConnection: close\r\nContent-Type: text/html"
+        },
+        {
+            "port": 111,
+            "state": "open",
+            "banner": ""
+        },
+        {
+            "port": 139,
+            "state": "open",
+            "banner": ""
+        },
+        {
+            "port": 445,
+            "state": "open",
+            "banner": ""
+        },
+        {
+            "port": 3306,
+            "state": "open",
+            "banner": ">\u0000\u0000\u0000\n5.0.51a-3ubuntu5\u0000\b\u0000\u0000\u0000&Floh<2$\u0000,\b\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[!1pc}m*(*8z\u0000"
+        },
+        {
+            "port": 5900,
+            "state": "open",
+            "banner": "RFB 003.003"
+        }
+    ],
+    "summary": {
+        "total_open": 11,
+        "ports": [
+            21,
+            22,
+            23,
+            25,
+            53,
+            80,
+            111,
+            139,
+            445,
+            3306,
+            5900
+        ]
+    }
+}
