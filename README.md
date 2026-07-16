@@ -81,8 +81,8 @@ REDFORGE/
 | 2 | Análise de vulnerabilidades (CVE lookup, CVSS) | ✅ Concluído |
 | 3 | Exploração (vsftpd, Samba, distcc, brute force) | ✅ Concluído |
 | 4 | Orquestrador (pipeline recon → exploit) | ✅ Concluído |
-| 5 | Pós-exploração (privesc, exfiltração simulada) | 🔄 Em progresso |
-| 6 | Reporting automático (PDF/Markdown profissional) | ⏳ Pendente |
+| 5 | Pós-exploração (privesc, exfiltração simulada) | ✅ Concluído |
+| 6 | Reporting automático (PDF/Markdown profissional) | 🔄 Em progresso |
 
 ---
 
@@ -109,6 +109,16 @@ REDFORGE/
 **SSH Brute Force (T1110.001) — 4 credenciais encontradas**
 
 ![ssh bruteforce](docs/screenshots/phase3_ssh_bruteforce.png)
+
+### Fase 4 — Orquestrador
+
+**Pipeline completo: Recon → Vuln Analysis → Exploitation**
+
+![pipeline 1](docs/screenshots/phase4_orchestrator_1.png)
+![pipeline 2](docs/screenshots/phase4_orchestrator_2.png)
+![pipeline 3](docs/screenshots/phase4_orchestrator_3.png)
+![pipeline 4](docs/screenshots/phase4_orchestrator_4.png)
+![pipeline 5](docs/screenshots/phase4_orchestrator_5.png)
 
 ## 🛠️ Stack Técnico
 
