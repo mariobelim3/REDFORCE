@@ -7,7 +7,7 @@
 *Full pentest cycle — Recon → Vulnerability Analysis → Exploitation → Post-Exploitation → Reporting*
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-orange?style=flat-square)
+![Status](https://img.shields.io/badge/Status-%20Concluído-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red?style=flat-square)
 ![Lab](https://img.shields.io/badge/Lab-VirtualBox%20%7C%20Kali%20%7C%20Metasploitable2-blueviolet?style=flat-square)
