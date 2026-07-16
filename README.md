@@ -118,7 +118,13 @@ REDFORGE/
 ![pipeline 2](docs/screenshots/phase4_orchestrator_2.png)
 ![pipeline 3](docs/screenshots/phase4_orchestrator_3.png)
 ![pipeline 4](docs/screenshots/phase4_orchestrator_4.png)
-![pipeline 5](docs/screenshots/phase4_orchestrator_5.png)
+
+### Fase 5 — Pós-Exploração
+
+**Enumeração e Exfiltração Simulada (T1083, T1057, T1087, T1048, T1049)**
+
+![post exploitation 1](docs/screenshots/phase5_post_exploitation_1.png)
+![post exploitation 2](docs/screenshots/phase5_post_exploitation_2.png)
 
 ## 🛠️ Stack Técnico
 
